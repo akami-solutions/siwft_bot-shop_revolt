@@ -6,10 +6,8 @@ ENV   BOT_TOKEN=null \
       IWAN=null \
       PREFIX=null \
 
-RUN  apt-get update && \
-     apt-get upgrade -y && \
-     apt-get autoremove -y && \
-     apt-get autoclean -y
+RUN  apk update && \
+     ak upgrade -y
 
 COPY . /opt/bot/
 
